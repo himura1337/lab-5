@@ -3,57 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторна робота №4 - Котячий світ (оновлений)</title>
+    <title>CYBER-CAT SYSTEM v.4.0</title>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="scan-line"></div> <div class="page-wrapper">
         <header>
-            <h1>Лабораторна робота №4</h1>
-            <h2>Котячий світ (оновлений)</h2>
+            <h1>SYSTEM: <span class="neon-text">CYBER-CAT</span></h1>
+            <h2>Protocol: Lab_05_Fonts_Activated</h2>
         </header>
 
         <main class="layout">
             <div class="image-block">
-                <img src="img/cat.png" alt="Рудий кіт Мурчик" id="main-cat">
+                <img src="img/cat.png" alt="Cyber Cat Unit" id="cyber-cat">
                 
-                <div class="css-cat-container">
-                    <p>CSS-графіка:</p>
-                    <div class="css-cat">
+                <div class="hologram-box">
+                    <p>STATUS: ONLINE</p>
+                    <div class="css-cat-hologram">
                         <div class="ear left"></div>
                         <div class="ear right"></div>
                         <div class="cat-head"></div>
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
                     </div>
                 </div>
             </div>
 
-            <section class="card">
+            <section class="card terminal">
                 <div class="content">
-                    <h3>Про котиків</h3>
-                    <p class="text">
-                        Котики роблять наш світ м’якшим і теплішим. Вони люблять спати, 
-                        муркотіти та дивитися на нас своїми великими очима.
-                        <br>
-                        <strong>Руді коти — це окремий вид щастя.</strong>
+                    <h3>> BIO_DATA_LOG</h3>
+                    <p class="text typing-effect">
+                        Об'єкт №1337. Модифікований кіт з нейронним інтерфейсом. 
+                        Призначення: нічне патрулювання кухні та перехоплення пакетів з кормом.
+                        Рівень небезпеки: <span class="danger">ВИСОКИЙ</span>.
                     </p>
 
-                    <table>
+                    <table class="cyber-table">
                         <tr>
-                            <th>Ім'я</th>
-                            <td>Мурчик</td>
+                            <th><i class="las la-microchip"></i> Модель</th>
+                            <td>Cyber-Murchyk T-800</td>
                         </tr>
                         <tr>
-                            <th>Вік</th>
-                            <td>2 роки</td>
+                            <th><i class="las la-battery-full"></i> Енергія</th>
+                            <td>Ядерний реактор (Сметана)</td>
                         </tr>
                         <tr>
-                            <th>Порода</th>
-                            <td>Дворова благородна</td>
+                            <th><i class="las la-wifi"></i> Зв'язок</th>
+                            <td>5G Муркотіння</td>
                         </tr>
                         <tr>
-                            <th>Улюблена їжа</th>
-                            <td>Індичка та сметанка</td>
+                            <th><i class="las la-radiation"></i> Зброя</th>
+                            <td>Лазерні кігті v.2.0</td>
                         </tr>
                     </table>
                 </div>
@@ -61,22 +69,21 @@
         </main>
 
         <footer>
-            <p>&copy; Криськів Андрій, 2026</p>
+            <p>SYSTEM ROOT: // USER_IVANCHYN_ACCESS_GRANTED</p>
         </footer>
     </div>
 
     <script>
-        const catImg = document.getElementById('main-cat');
-        
-        catImg.addEventListener('click', () => {
-           
-            catImg.style.transition = "transform 0.3s ease";
-            catImg.style.transform = "scale(1.1) rotate(5deg)";
-            
+        const cat = document.getElementById('cyber-cat');
+        cat.addEventListener('click', () => {
+            // Ефект збою системи при кліку
+            cat.style.filter = "hue-rotate(90deg) contrast(200%)";
+            cat.style.transform = "scale(1.1) skewX(10deg)";
             setTimeout(() => {
-                catImg.style.transform = "scale(1) rotate(0deg)";
-                alert("Мяу! Ви активували JavaScript-анімацію!");
-            }, 300);
+                cat.style.filter = "none";
+                cat.style.transform = "none";
+                alert("⚠ SYSTEM ALERT: DON'T TOUCH THE CYBORG! ⚠");
+            }, 200);
         });
     </script>
 </body>
