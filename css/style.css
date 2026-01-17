@@ -4,6 +4,8 @@
 @font-face {
     font-family: "RetroCyberFont";
     src: url("../fonts/Pacifico-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -38,11 +40,9 @@ header {
 }
 
 header h1 {
-    font-family: "RetroCyberFont", cursive; 
-    font-size: 3em;
-    color: #FF00FF;
-    text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
-    letter-spacing: normal; 
+    font-family: "RetroCyberFont", cursive;
+    font-size: 3.5em;
+    margin: 0;
 }
 
 .neon-text {
